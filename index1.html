@@ -210,122 +210,123 @@
         </div>
         <!-- END row -->
         <!-- Main Div -->
-        <div id="parent">
-            <div id="wrapper">
-                <div style="text-align: center;">
-                    <h1 class="text-black probootstrap-heading">Heart Disease Predictor</h1>
-                </div>
-                <div class="child1">
-                    <table class="naked_table">
-                        <tr>
-                            <td>
-                                <label class="before_slider" for="nSex1">
-                                    Sex (0=female,1=male)</label></td>
-                            <td class="input_slider">
-                                <form class="slider_input">
-                                    <input class="hd-slider-width" id="nSex1" max="1" min="0" name="amountRange"
-                                           oninput="this.form.amountInput.value=this.value"
-                                           step="1" type="range" value="0"/>
-                                    <input class="hd-number-width" id="nSex2" max="1" min="0" name="amountInput"
-                                           oninput="this.form.amountRange.value=this.value"
-                                           step="1" type="number" value="0"/>
-                                </form>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label class="before_slider" for="nRestbp1">
-                                Resting Blood Pressure (94 - 200 mmHg)</label></td>
-                            <td class="input_slider">
-                                <form class="slider_input">
-                                    <input class="hd-slider-width" id="nRestbp1" max="200" min="94" name="amountRange"
-                                           oninput="this.form.amountInput.value=this.value"
-                                           step="all" type="range" value="94"/>
-                                    <input class="hd-number-width" id="nRestbp2" max="200" min="94" name="amountInput"
-                                           oninput="this.form.amountRange.value=this.value"
-                                           step="all" type="number" value="94"/>
-                                </form>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label class="before_slider" for="nThalach1">
-                                Thalium Stress Test Maximum Heart Rate (71 - 202)</label></td>
-                            <td class="input_slider">
-                                <form class="slider_input">
-                                    <input class="hd-slider-width" id="nThalach1" max="202" min="71" name="amountRange"
-                                           oninput="this.form.amountInput.value=this.value"
-                                           step="all" type="range" value="71"/>
-                                    <input class="hd-number-width" id="nThalach2" max="202" min="71" name="amountInput"
-                                           oninput="this.form.amountRange.value=this.value"
-                                           step="all" type="number" value="71"/>
-                                </form>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label class="before_slider" for="nCa1">
-                                Number of Major Vessels Colored by Fluoroscopy (0 - 3)</label></td>
-                            <td class="input_slider">
-                                <form class="slider_input">
-                                    <input class="hd-slider-width" id="nCa1" max="3" min="0" name="amountRange"
-                                           oninput="this.form.amountInput.value=this.value"
-                                           step="all" type="range" value="0"/>
-                                    <input class="hd-number-width" id="nCa2" max="3" min="0" name="amountInput"
-                                           oninput="this.form.amountRange.value=this.value"
-                                           step="all" type="number" value="0"/>
-                                </form>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label class="before_slider" for="nCp1">
-                                Chest Pain Type (1=typical angina, 2=atypical angina, 3=non-angina, 4=asymptomatic
-                                angina)</label></td>
-                            <td class="input_slider">
-                                <form class="slider_input">
-                                    <input class="hd-slider-width" id="nCp1" max="4" min="1" name="amountRange"
-                                           oninput="this.form.amountInput.value=this.value"
-                                           step="1" type="range" value="1"/>
-                                    <input class="hd-number-width" id="nCp2" max="4" min="1" name="amountInput"
-                                           oninput="this.form.amountRange.value=this.value"
-                                           step="1" type="number" value="1"/>
-                                </form>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label class="before_slider" for="nSlope1">
-                                Peak Exercise ST Segment (0=flat or downsloping, 1=upsloping)</label></td>
-                            <td class="input_slider">
-                                <form class="slider_input">
-                                    <input class="hd-slider-width" id="nSlope1" max="1" min="0" name="amountRange"
-                                           oninput="this.form.amountInput.value=this.value"
-                                           step="1" type="range" value="0"/>
-                                    <input class="hd-number-width" id="nSlope2" max="1" min="0" name="amountInput"
-                                           oninput="this.form.amountRange.value=this.value"
-                                           step="1" type="number" value="0"/>
-                                </form>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label class="before_slider" for="nThal1">
-                                Thalium Test: (0=normal or fixed defect, 1=reversible defect)</label></td>
-                            <td class="input_slider">
-                                <form class="slider_input">
-                                    <input class="hd-slider-width" id="nThal1" max="1" min="0" name="amountRange"
-                                           oninput="this.form.amountInput.value=this.value"
-                                           step="1" type="range" value="0"/>
-                                    <input class="hd-number-width" id="nThal2" max="1" min="0" name="amountInput"
-                                           oninput="this.form.amountRange.value=this.value"
-                                           step="1" type="number" value="0"/>
-                                </form>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td class="input_slider">
-                                <input class="btn btn-primary" onclick="updateOne(val01,-1)" type="button"
-                                       value="Reset All Sliders"/>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+<div class="1">
+<div class="container">   
+   
+    <form action="{{ url_for('NaiveBayes') }}" method="POST" >
+    <fieldset class="fd">
+        <legend>Input values:</legend>
+<div class="row">
+    <div class="col-25">
+      <label>Age:</label>
+    </div>
+    <div class="col-75">
+      <input name="age" class="input" type="number" required>
+    </div>
+  </div>
+<div class="row">
+    <div class="col-25">
+     <label>Sex:</label>
+    </div>
+    <div class="col-75">
+     <input name="sex" type="number" class="input" required>
+    </div>
+  </div>
+<div class="row">
+    <div class="col-25">
+       <label>Cp:</label>
+    </div>
+    <div class="col-75">
+     <input name="cp" type="number"class="input" required>
+    </div>
+  </div>
+<div class="row">
+    <div class="col-25">
+        <label>Trestbps:</label>
+    </div>
+    <div class="col-75">
+     <input name="trestbps" type="number" class="input"required>
+    </div>
+  </div>
+<div class="row">
+    <div class="col-25">
+       <label>Chol:</label> 
+    </div>
+    <div class="col-75">
+     <input name="chol" type="number" class="input"required>
+    </div>
+  </div>
+<div class="row">
+    <div class="col-25">
+       <label>Fps</label> 
+    </div>
+    <div class="col-75">
+     <input name="fbs" type="number" class="input"required>
+    </div>
+  </div>
+<div class="row">
+    <div class="col-25">
+      <label>restecg:</label>
+    </div>
+    <div class="col-75">
+     <input name="restecg" type="number"class="input" required>
+    </div>
+  </div>
+<div class="row">
+    <div class="col-25">
+       <label>thalach:</label> 
+    </div>
+    <div class="col-75">
+     <input name="thalach" type="number" class="input"required>
+    </div>
+  </div>
+<div class="row">
+    <div class="col-25">
+      <label>exang</label>
+    </div>
+    <div class="col-75">
+    <input name="exang" type="number" class="input"required>
+    </div>
+  </div>
+<div class="row">
+    <div class="col-25">
+       <label>oldpeak:</label>
+    </div>
+    <div class="col-75">
+    <input name="oldpeak" type="number"class="input" required>
+    </div>
+  </div>
+<div class="row">
+    <div class="col-25">
+       <label>slope:</label>
+    </div>
+    <div class="col-75">
+     <input name="slope" type="number"class="input" required>
+    </div>
+  </div>
+<div class="row">
+    <div class="col-25">
+       <label>ca:</label> 
+    </div>
+    <div class="col-75">
+    <input name="ca" type="number"class="input" required>
+    </div>
+  </div>
+<div class="row">
+    <div class="col-25">
+        <label>thal:</label> 
+    </div>
+    <div class="col-75">
+   <input name="thal" type="number"class="input" required>
+    </div>
+  </div>
+        <br>
+        <input type="submit" value="submit">
+    
+        </fieldset> 
+    </form>
+</div>
+
                 <div class="child2">
                     <script>
                         const width = 100;
